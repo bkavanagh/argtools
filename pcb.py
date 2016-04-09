@@ -1,14 +1,18 @@
 __author__ = 'brendan'
+"""
+Some basic tools for visualizing and manuipulating the PCB text, probably 2.x only.
+
+### SETUP ###
+pip install Pillow
+"""
 from collections import Counter
-import re
 from PIL import Image
-from PIL import ImageFont
-from PIL import ImageDraw
 import string
 from collections import defaultdict
 import operator
 import re
-import time
+
+
 class Coord(tuple):
 
     def __add__(self, other):
