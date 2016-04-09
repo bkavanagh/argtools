@@ -123,4 +123,7 @@ if __name__ == '__main__':
     #pcb.as_image(mapped=False, valid_letters='krieger')
 
     # Grayscale image shwoing the relatiuve value of all the letters
-    pcb.as_image(mapped=True, scale=10)
+    pcb.as_image(mapped=True, scale=10, valid_letters='archer')
+
+    import json
+    print json.dumps(pcb.as_list())
