@@ -126,4 +126,5 @@ if __name__ == '__main__':
     pcb.as_image(mapped=True, scale=10, valid_letters='archer')
 
     import json
-    print json.dumps(pcb.as_list())
+    for k, v in pcb.as_counter().iteritems():
+        print '{};{}'.format(k, v)
